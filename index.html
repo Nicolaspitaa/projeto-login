@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    
-    
-    
+      
 </head>
 <body>
-    
-
-    <div >
-        
-        <section id="imagem">
-            
-        </section>
-        
-            <section id="log">
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="form">
                 <h1>Login</h1>
-                <p >Seja bem vindo(a) novamente. Faça login para acessar a sua conta e poder fazer <br> as configurações no seu ambiente.</p>
-            </section>
-      
-        <form action="">
-            
-            <p id="user" >
-                
-                <label  for="iuser"></label>
-                <input type="email" name="User" id="iuser" placeholder="Seu Usuario">
-            </p>
-            
-            <p>
-                
-                <label for="isen"></label>
-                <input type="password" name="senha" id="isen" placeholder="Sua Senha">
-            </p>
-             
-            <section id="botoes">
-                <a href=""><input id="entrar" type="submit" value="Entrar"></a>
-                <br>
-                <input id="esqueci" type="button" value="Esqueci a Senha">
-            </section>
-        </form>
-    </div>
-    
+                <p>Seja bem vindo(a) novamente. Faça Login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="login.html" method="post" autocomplete="on">
+
+                    <div class="campo">
+                        <i class="fa-solid fa-circle-user fa-lg"></i>
+
+                        <input type="email" name="login" id="ilogin" placeholder="Login" required autocomplete="email">
+
+                        <label for="ilogin"></label>
+                    </div>
+
+                    <div class="campo">
+                        <i class="fa-solid fa-key fa-lg"></i>
+
+                        <input type="password" name="senha" id="isen" placeholder="Sua senha" required autocomplete="current-password">
+
+                        <label for="isen"></label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+
+                    <a href="esqueci.html" class="botao">Esqueci a senha</a>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
 </body>
 </html>
