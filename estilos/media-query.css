@@ -45,6 +45,13 @@
         
     }
 
+    div.campo> input{
+        font-size: 1em;
+        width: 88%;
+        height: 75%;
+        border-radius: 5px;
+    }
+
     form> input[type=submit]{
         display: block;
         margin-top: 5px;
@@ -125,6 +132,13 @@
     div.campo > label{
         display: none;
         
+    }
+
+    div.campo> input{
+        font-size: 1em;
+        width: 86%;
+        height: 75%;
+        border-radius: 5px;
     }
 
 
